@@ -1,0 +1,356 @@
+
+
+ /*---- Video Slideshow -----*/
+ .video-container {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.video-container .navigation {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+    /* The order of elements */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-container .navigation li {
+    list-style: none;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 4px;
+    background: #fff;
+    padding: 3px 3px 0;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.video-container .navigation li:hover {
+    opacity: 1;
+}
+
+.video-container .navigation li img {
+    height: 100px;
+    width: 120px;
+    transition: 0.5s;
+}
+.video-container .navigation li img:hover {
+    width: 200px;
+    opacity: 1;
+}
+
+.mainQuote {
+  z-index: 1;
+  position:absolute;
+  font-size: 20px;
+  top:50%;
+  left:5%;
+  text-align: center;
+  color: #fff;
+}
+
+
+/*---- Recommended Products Grid ----*/
+
+#recProd{
+  color:#fff;
+  text-align: center;
+  margin-top: 3%;
+  border-style: solid;
+  border-color: #ca6f00;
+}
+.grid-container {
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-template-columns:300px 300px 300px;
+    grid-template-rows: auto;
+    margin-top: 40px;
+    column-gap: 40px;
+    height: 50vh;
+}
+
+.grid-item img {
+    width: 300px;
+    height: 300px;
+    text-align: center;
+}
+
+.grid-item {
+    padding: 20px;
+    color: white;
+}
+
+.grid-item p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  color:#ca6f00;
+}
+
+/*---- Motivation Text ----*/
+.motivation {
+    color: #ca6f00;
+    /* display: inline-block; */
+    text-align: center;
+    font-size: 60px;
+    padding: 15%;
+    /* margin: 10%;  */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url('/public/images/dark-lift.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.learn-container{
+    padding-top: 100px;
+    padding-bottom: 100px; 
+}
+
+.info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    justify-items: center;
+    padding: 50px;
+}
+
+.info-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: stretch;
+  
+}
+
+.learn-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: stretch;
+    color: white;
+    padding: 30px;
+  /* z-index: 100;
+  position: absolute;
+  color: #ffffff;
+  font-size: 30px;
+  text-align: center;
+  left: auto;
+  top: 0;
+  padding-top: 12px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-style: solid;
+  width: 100%;
+  border-color: #ca6f00; */
+}
+
+.learn-text h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+   
+  }
+
+  
+.learn-text p {
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+.learn-text button {
+  height: 40px;
+  width: 200px;
+  margin: 20px;
+  border:none;
+  letter-spacing: 1px;
+}
+
+.learn-text button:hover{
+  background-color: #cb7102;
+  color: #fff;
+}
+
+
+ 
+
+/*----- Footer -----*/
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+    margin: 20px 0;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .signUp{
+    display: inline;
+    position: relative;
+    padding: 10px;
+    margin: 20px;
+  }
+
+.signUp input{
+    outline: none;
+  }
+
+  .signUp input[type="submit"]{
+    background: #ca6f00;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+.signUp h2 {
+  color: #cb7102;
+}
+  footer h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 10px;
+  }
+
+  footer label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+  }
+
+  .followUs {
+    color: #cb7102;
+  }
+
+  .followUs {
+    margin: 40px;
+  }
+  footer ul {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    height: 30px;
+
+  }
+  footer i {
+   padding: 5px 10px;
+   margin-top: 25px;
+   text-decoration: none;
+  }
+  
+  a, a:visited {
+    color: white; 
+    text-decoration: none;
+    /* padding: 10px;  */
+  }
+
+  .icons:hover{
+    transition: .5s;
+    cursor: pointer;
+  }
+
+/*---- Responsive ----*/
+
+/*--- Small Mobile -----*/
+@media screen and (min-width: 320px) and (max-width: 480px){
+  * {
+    overflow-x: hidden;
+}
+
+section .navigation li img {
+  height: 50px;
+  width: 80px;
+}
+
+section .navigation li img:hover {
+  width: 100px;
+}
+
+.mainQuote {
+  position:relative;
+  font-size: 15px;
+  top:0;
+  z-index: 1;
+}
+
+#recProd{
+  color:#fff;
+  text-align: center;
+  margin-top: 5%;
+  border-style: solid;
+  border-color: #ca6f00;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+}
+.grid-item img {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+.motivation {
+  font-size: 20px;
+  padding: 15%;
+}
+
+
+.learn img {
+  height: 50vh;
+}
+
+.learnText {
+  font-size: 15px;
+}
+footer {
+  width: 90%;
+  text-align: center;
+  
+}
+
+.signUp{
+  display: inline;
+  position: relative;
+  padding: 10px;
+  margin: 20px;
+}
+
+.signUp input{
+  outline: none;
+  margin-bottom: 5px;
+}
+.followUs {
+  padding: 10px;
+}
+}
+  /* ---------- tablets ----------- */
+@media screen and (min-width: 481px) and (max-width: 768px){
+  * {
+      overflow-x: hidden;
+  }
+}
+
+/*-------- laptops -------  */
+@media screen and (min-width: 769px) and (max-width: 1025px) {}

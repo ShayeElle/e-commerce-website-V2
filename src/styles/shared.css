@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    Margin: 0;
+    padding: 0;
+    font-family: 'Unbounded', cursive;
+   
+}
+
+body {
+    /* background-color: rgb(25, 25, 25); */
+    background: linear-gradient(-45deg, #000000, #171717, #ca6f00, #9c5601);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    height: 200vh;
+    overflow-x: hidden;
+}
+/* Gradient Background */
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }

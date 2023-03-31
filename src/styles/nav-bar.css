@@ -1,5 +1,115 @@
-nav {
-    background-color: aqua;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
+/* header */
+.store-name {
+    width: 100%;
+    padding-top: 10px;
 }
+
+.store-name h1 {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+}
+
+.shop_logo {
+    max-width: 150px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    display: block;
+    margin: auto;
+   
+}
+
+nav {
+    display: flex;
+    padding: 1% 30%;
+    justify-content: center;
+  }
+  
+.nav-links {
+    flex:1;
+    text-align: right;
+  }
+  
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+  }
+  
+.nav-links ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+.nav-links ul li::after {
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: #ca6f00;
+    display: block;
+    margin: auto;
+    transition:0.5s;
+  }
+
+.nav-links ul li:hover::after {
+    width:100%;  
+  }
+
+
+
+
+  /*--- Small Mobile -----*/
+@media screen and (min-width: 325px) and (max-width: 480px){
+    * {
+      overflow-x: hidden;
+  }
+  
+  nav {
+        display: flex;
+        padding: 2% 5%;
+       
+    }
+
+    .nav-links ul li a {
+        font-size: 20px;
+      }
+    
+  }
+  
+  
+  .store-name {
+      text-align: center;
+      font-size: 1em;
+      padding-top: 50px;
+  }
+
+    /* ---------- tablets ----------- */
+  @media screen and (min-width: 481px) and (max-width: 768px){
+   
+    nav {
+        display: flex;
+        padding: 2% 5%;
+    }
+
+    .nav-links ul li a {
+        font-size: 25px;
+      }
+  }
+  
+  /*-------- laptops -------  */
+  @media screen and (min-width: 769px) and (max-width: 1045px) {
+
+    nav {
+        display: flex;
+        padding: 2% 5%;
+       
+    }
+      .nav-links ul li a {
+        text-align: center;
+        /* padding: 5px 30px; */
+      
+      }
+  }
+  
