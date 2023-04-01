@@ -14,3 +14,5 @@ const Layout = () => {
 };
 
 export default Layout;
+
+// Outlet is what changes but Navbar and Footer remain the same

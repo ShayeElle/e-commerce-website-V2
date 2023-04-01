@@ -1,5 +1,6 @@
 import React from 'react';
 import '../styles/contact.css';
+import '../styles/shared.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons';
 
@@ -7,9 +8,9 @@ function Contact() {
     return (
     <>
     <section className="heroVid">
-        <video id="manlift" autoPlay muted loop>
+        {/* <video id="manlift" autoPlay muted loop>
             <source src="videos/manweightlift.mp4" type="video/mp4" />
-        </video>
+        </video> */}
         <div className="heroText">
             <h2> CONTACT US </h2>
             <p> Feel free to use the form below if you have any questions, comments, or concerns</p>
@@ -65,9 +66,6 @@ function Contact() {
         </div>
     </div>
 </main>
-
-<script src="contact.js"></script>
-
 </>
     );
 }

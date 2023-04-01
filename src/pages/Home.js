@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/home.css';
-import '../styles/shared.css'
+import '../styles/shared.css';
 
 
 function Home() {
@@ -9,7 +9,7 @@ function Home() {
     <section className='video-container'>
         <div className="video">
             <video id="slider" autoPlay muted loop>
-                <source src="/videos-myAnimeVid.MP4" type="video/mp4" />
+                <source src="videos/myAnimeVid.MP4" type="video/mp4" />
             </video>
             {/* <ul className="navigation">
                 <li onClick={() => videoUrl('videos/myAnimeVid.mp4')}>
@@ -25,12 +25,11 @@ function Home() {
         </div>
   </section>
   <div className="mainQuote">
-  <h2>
-    {" "}
-    "No matter how hard or impossible it is, never lose sight of your goal."{" "}
-    <br /> - Monkey D Luffy
-  </h2>
-</div>
+    <h2>
+        "No matter how hard or impossible it is, never lose sight of your goal."
+        <br /> - Monkey D Luffy
+    </h2>
+  </div>
 {/* Highlighted Product Grid */}
 
 <div id="recProd">
