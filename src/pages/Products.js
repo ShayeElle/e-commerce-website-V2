@@ -23,7 +23,12 @@ const Products = () => {
 
 return (
     <div>
-      <h1>Products Page</h1>
+      <section className="products-header">
+      <img id="manlift" src="/images/BumperPlatesHD.jpg" alt="Colorful Bumper Plates" />
+      <div class="product-header-text">
+        <h1> PRO EQUIPTMENT </h1>
+    </div>
+      </section>
       <div className="products-container">
         {Products.map((product) => (
           <div key={product.id} className="product-item">

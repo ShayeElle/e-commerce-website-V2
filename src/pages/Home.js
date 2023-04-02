@@ -1,10 +1,40 @@
 import React from 'react';
+import { useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
 import '../styles/home.css';
 import '../styles/shared.css';
 
 
+
 function Home() {
-    return (
+  const [Products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchAllProducts = async () => {
+      try {
+        const res = await axios.get("http://localhost:8800/products");
+        setProducts(res.data);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetchAllProducts();
+  }, []);
+
+  console.log(Products);
+
+  const filterData = []
+  filterData.push(Products[2])
+  filterData.push(Products[3])
+  filterData.push(Products[7])
+  console.log(filterData);
+
+  // const filterData = [Products[2], Products[3], Products[7]];
+  // console.log(filterData);
+  
+
+  return (
         <>
     <section className='video-container'>
         <div className="video">
@@ -35,6 +65,23 @@ function Home() {
 <div id="recProd">
   <h2> RECOMMENDED PRODUCTS </h2>
 </div>
+
+{/* Trying to map filtered products but run into errors */}
+{/* 
+<div className="grid-container">
+{filterData.map((product) => {
+  return (
+    <div className="grid-item">
+      <img src={product.image} alt={product.title} />
+      <h3> {product.title}</h3>
+      <p> ${product.price}</p>
+  </div>
+  )
+})};
+</div>  */}
+
+
+
 <section className="grid-container">
   <div className="grid-item">
     <a href="Shop.html">
@@ -58,9 +105,9 @@ function Home() {
     <p> $1890.00</p>
   </div>
 </section>
+
+
 {/* motivation quote */}
-
-
 <div className="motivation">
   <h2> WORK HARD, <br /> TRAIN HARDER</h2>
 </div>
