@@ -4,7 +4,7 @@ import { useState } from "react";
 import axios from "axios";
 import '../styles/home.css';
 import '../styles/shared.css';
-
+import ImageSlider from "../components/ImageSlider";
 
 
 function Home() {
@@ -30,9 +30,19 @@ function Home() {
   filterData.push(Products[7])
   console.log(filterData);
 
-  // const filterData = [Products[2], Products[3], Products[7]];
-  // console.log(filterData);
+  const slides = [
+    { url: "http://localhost:3000/images/luffy.jpeg", title: "beach" },
+    { url: "http://localhost:3000/images/battleRopes.jpg", title: "boat" },
+    { url: "http://localhost:3000/images/naruto.jpeg", title: "forest" },
+    { url: "http://localhost:3000/images/TattedWoman.jpg", title: "city" },
+    { url: "http://localhost:3000/images/ichigo.jpeg", title: "italy" },
+  ];
   
+  const containerStyles = {
+    width: "500px",
+    height: "280px",
+    margin: "25px auto",
+  };
 
   return (
         <>
@@ -105,6 +115,15 @@ function Home() {
     <p> $1890.00</p>
   </div>
 </section>
+
+<div className='image-slider'>
+<div>
+      {/* <h1>Hello monsterlessons</h1> */}
+      <div style={containerStyles}>
+        <ImageSlider slides={slides} />
+      </div>
+    </div>
+</div>
 
 
 {/* motivation quote */}
