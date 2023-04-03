@@ -1,0 +1,25 @@
+.fof-container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.fof-container h1{
+    font-style: italic;
+    font-size: 7rem;
+    color: white;
+}
+
+.fof-container img {
+    height: 50vh;
+    padding: 10px;
+
+}
+
+.fof-container p{
+    font-style: italic;
+    font-size: 1.5rem;
+    color: white;
+}

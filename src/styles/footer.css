@@ -73,3 +73,36 @@ footer {
     transition: .5s;
     cursor: pointer;
   }
+
+  /*---- Responsive ----*/
+
+/*--- Small Mobile -----*/
+@media screen and (min-width: 320px) and (max-width: 480px){
+ 
+footer {
+  width: 90%;
+  text-align: center;
+  
+}
+
+.signUp{
+  display: inline;
+  position: relative;
+  padding: 10px;
+  margin: 20px;
+}
+
+.signUp input{
+  outline: none;
+  margin-bottom: 5px;
+}
+.followUs {
+  padding: 10px;
+}
+}
+  /* ---------- tablets ----------- */
+@media screen and (min-width: 481px) and (max-width: 768px){
+  * {
+      overflow-x: hidden;
+  }
+}

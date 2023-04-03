@@ -39,7 +39,7 @@ function Home() {
   ];
   
   const containerStyles = {
-    width: "500px",
+    width: "600px",
     height: "280px",
     margin: "25px auto",
   };
@@ -116,14 +116,14 @@ function Home() {
   </div>
 </section>
 
+
 <div className='image-slider'>
-<div>
       {/* <h1>Hello monsterlessons</h1> */}
       <div style={containerStyles}>
         <ImageSlider slides={slides} />
       </div>
     </div>
-</div>
+
 
 
 {/* motivation quote */}

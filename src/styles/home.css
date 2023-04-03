@@ -203,20 +203,11 @@
     overflow-x: hidden;
 }
 
-section .navigation li img {
-  height: 50px;
-  width: 80px;
-}
-
-section .navigation li img:hover {
-  width: 100px;
-}
-
 .mainQuote {
-  position:relative;
-  font-size: 15px;
-  top:0;
-  z-index: 1;
+  /* position:relative; */
+  font-size: .7rem;
+  /* top:0;
+  z-index: 1; */
 }
 
 #recProd{
@@ -232,11 +223,13 @@ section .navigation li img:hover {
   flex-direction: column;
   height: 60%;
 }
+
 .grid-item img {
   width: 100px;
   height: 100px;
   text-align: center;
 }
+
 .motivation {
   font-size: 20px;
   padding: 15%;
@@ -247,36 +240,58 @@ section .navigation li img:hover {
   height: 50vh;
 }
 
-.learnText {
+.learn-text h2 {
   font-size: 15px;
 }
-footer {
-  width: 90%;
-  text-align: center;
-  
-}
 
-.signUp{
-  display: inline;
-  position: relative;
-  padding: 10px;
-  margin: 20px;
-}
-
-.signUp input{
-  outline: none;
-  margin-bottom: 5px;
-}
-.followUs {
-  padding: 10px;
+.learn-text p {
+  font-size: 10px;
 }
 }
   /* ---------- tablets ----------- */
 @media screen and (min-width: 481px) and (max-width: 768px){
   * {
       overflow-x: hidden;
+      
   }
-}
 
-/*-------- laptops -------  */
-@media screen and (min-width: 769px) and (max-width: 1025px) {}
+  .mainQuote {
+    font-size: .9rem;
+    position:relative;
+    top: -300px;
+    z-index: 1;
+    left: 0;
+  }
+  
+  #recProd{
+    color:#fff;
+    text-align: center;
+    margin-top: 5%;
+    border-style: solid;
+    border-color: #ca6f00;
+  }
+  
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+  }
+  .grid-item img {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+  }
+  
+  .motivation {
+    font-size: 20px;
+    padding: 15%;
+  }
+  
+  .learn-text h2 {
+    font-size: 15px;
+  }
+
+  .learn-text p {
+    font-size: 13px;
+  }
+};

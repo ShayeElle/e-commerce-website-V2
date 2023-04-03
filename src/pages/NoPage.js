@@ -1,15 +1,15 @@
 import React from 'react';
 
-import '../styles/home.css';
-import '../styles/shared.css';
+import '../styles/no-page.css';
 
 
 function NoPage() {
     return (
         <>
-        <section className=''>
+        <section className='fof-container'>
             <h1>404</h1>
-            <p> Sorry! Page not found </p>
+            <img src="images/sad-chopper.jpg" alt='Sad Chopper' />
+            <p> Sorry! Page not found, try not to get lost! </p>
         </section>
         
         </>
