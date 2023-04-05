@@ -25,7 +25,9 @@ export default function Footer(){
           <li><a href="https://twitter.com"><FontAwesomeIcon icon={faTwitter} style={{color: "#ffffff",}} /></a></li>
       </ul>
     </div>
-      
+    <div className="copyright">
+        <p>Copyright © 2023 Shonen Lift by Shaye Ellerbe</p>
+    </div>
 </footer>
 
      </>
