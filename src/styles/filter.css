@@ -3,13 +3,13 @@
     text-align: center;
 }
 
-label {
+.filter-label {
     color: rgb(252, 252, 252);
-    font-size: 25px;
+    font-size: 15px;
     font-weight: 100px;
 }
 
-input {
+.filter-price , .filter-label{
     padding: .9rem;
     margin: 1rem;
     border-radius: 15px;

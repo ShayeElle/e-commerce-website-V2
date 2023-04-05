@@ -309,7 +309,7 @@
 };
 
 /*-------- laptops -------  */
-/* @media screen and (min-width: 769px) and (max-width: 1025px){
+@media screen and (min-width: 769px) and (max-width: 1025px){
   * {
     overflow-x: hidden;
     
@@ -322,7 +322,7 @@
     left: 0;
   }
 
-
+/* 
   #recProd{
     color:#fff;
     text-align: center;
@@ -335,11 +335,11 @@
     display: flex;
     flex-direction: column;
     height: 60%;
-  }
+  } */
 
-.info{
+/* .info{
   display: flex;
   flex-direction: column;
-}
-  
 } */
+  
+}

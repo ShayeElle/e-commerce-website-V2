@@ -49,7 +49,7 @@ const Search = () => {
 
             <div className="searchBar">
                 <label>Search:</label>
-                <input
+                <input className="filter-label"
                     ref={inputRef}
                     onChange={handleChange}
                     placeholder="Find a Product"
@@ -58,13 +58,13 @@ const Search = () => {
             </div>
             <div className="maxnmin">
                 <label>Min Price:</label>
-                <input
+                <input className="filter-price"
                     type="number"
                     value={minPrice}
                     onChange={(e) => setMinPrice(Math.max(0, e.target.value))}
                 />
                 <label>Max Price:</label>
-                <input
+                <input className="filter-price"
                     type="number"
                     value={maxPrice}
                     onChange={(e) => setMaxPrice(Math.min(3000, e.target.value))}
