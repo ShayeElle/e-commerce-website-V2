@@ -16,18 +16,18 @@
     object-fit: cover;
 }
 
-.video-container .navigation {
+/* .video-container .navigation {
     position: absolute;
     bottom: 70px;
     left: 50%;
     transform: translate(-50%);
     z-index: 100;
-    /* The order of elements */
+          The order of elements
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.video-container .navigation li {
+} */
+/* .video-container .navigation li {
     list-style: none;
     cursor: pointer;
     margin: 0 10px;
@@ -50,7 +50,7 @@
 .video-container .navigation li img:hover {
     width: 200px;
     opacity: 1;
-}
+} */
 
 .mainQuote {
   z-index: 1;
@@ -95,6 +95,7 @@
 .grid-item {
     padding: 20px;
     color: white;
+    cursor: pointer;
 }
 
 .grid-item p {
@@ -114,7 +115,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-image: url('/public/images/dark-lift.jpg');
+    background-image: url('/public/images/dark_lift.jpg');
     background-attachment: fixed;
     background-size: cover;
 }
@@ -204,10 +205,11 @@
 }
 
 .mainQuote {
-  /* position:relative; */
+  position:relative;
   font-size: .7rem;
-  /* top:0;
-  z-index: 1; */
+  top: -300px;
+  z-index: 1;
+  left: 0;
 }
 
 #recProd{
@@ -235,9 +237,13 @@
   padding: 15%;
 }
 
+.info{
+  display: flex;
+  flex-direction: column;
+}
 
-.learn img {
-  height: 50vh;
+.info-image img {
+  height: 20vh;
 }
 
 .learn-text h2 {
@@ -287,11 +293,53 @@
     padding: 15%;
   }
   
+
+.info{
+  display: flex;
+  flex-direction: column;
+}
+
   .learn-text h2 {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .learn-text p {
     font-size: 13px;
   }
 };
+
+/*-------- laptops -------  */
+/* @media screen and (min-width: 769px) and (max-width: 1025px){
+  * {
+    overflow-x: hidden;
+    
+}
+  .mainQuote {
+    font-size: .9rem;
+    position:relative;
+    top: -300px;
+    z-index: 1;
+    left: 0;
+  }
+
+
+  #recProd{
+    color:#fff;
+    text-align: center;
+    margin-top: 5%;
+    border-style: solid;
+    border-color: #ca6f00;
+  }
+  
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+  }
+
+.info{
+  display: flex;
+  flex-direction: column;
+}
+  
+} */

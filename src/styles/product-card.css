@@ -1,0 +1,115 @@
+
+  .products-header {
+    position: relative;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 10%;
+  }
+  .products-header img {
+  
+    width:100%;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .product-header-text {
+    position: absolute;
+    z-index: 100;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: center;
+    left: auto;
+    top: 30%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-style: solid;
+    width: 100%;
+  }
+  
+  .product-header-text h1{
+    color: white;
+  }
+
+  .products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+    text-align: center;
+     /* background-color:  rgba(22, 12, 1, 0.439);; */
+  }
+  
+  .products-container > div {
+    flex-basis: 25%;
+    margin: 10px;
+    padding: 20px;
+    /* border: 1px solid rgb(254, 254, 254); */
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1); */
+  }
+  
+  .products-container img {
+    max-width: 100%;
+  }
+  
+  .products-container h2 {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: white;
+  }
+  
+  .products-container p {
+    margin-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: #ca6f00;
+  }
+  
+  .products-container span {
+    display: block;
+    margin-top: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color:white;
+  }
+ 
+  .product-item img {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover; /* to make sure the images maintain their aspect ratio */
+  }
+  
+  /* Make grid contain less columns and more rows everytime screen is made smaller*/
+  @media screen and (max-width: 1024px) {
+    .products-container > div {
+      flex-basis: 18rem;
+      margin: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .products-container > div {
+      flex-basis: 19rem;
+      margin: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 425px) {
+    .products-container {
+      justify-content: space-between;
+      padding: 20px;
+    }
+    .products-container > div {
+      flex-basis: 19rem;
+      margin: 25px 0;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .products-container > div {
+      flex-basis: 270px;
+      margin: 20px 0;
+    }
+  }

@@ -1,4 +1,8 @@
-
+/* 
+.wrapper__filter {
+  position: relative;
+  text-align: center;
+} */
   .products-header {
     position: relative;
     width: 100%;

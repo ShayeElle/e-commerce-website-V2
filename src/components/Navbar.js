@@ -1,14 +1,19 @@
 import React from "react";
 import {  Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import '../styles/nav-bar.css';
 import '../styles/shared.css';
+// import Button from "./Button";
+
 
 function Navbar() {
+
   return (
     <>
     <header className='store-name'> 
         <h1> SHONEN LIFT </h1> 
-        <img className='shop_logo' src="images/shonenLift-logo.png" alt="logo" />
+        <img className='shop_logo' src="images/shonenLift_logo.png" alt="logo" />
     </header>
     <nav className='nav-links' id='myTopnav'>
      <ul>
@@ -20,6 +25,9 @@ function Navbar() {
         </li>
         <li>
          <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/cart"><FontAwesomeIcon icon={faCartShopping} style={{color: "#ffffff",}} /></Link>
         </li>
      </ul>
     </nav>

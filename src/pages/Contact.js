@@ -7,11 +7,8 @@ import { faEnvelope, faLocationDot, faPhone } from '@fortawesome/free-solid-svg-
 function Contact() {
     return (
     <>
-    <section className="heroVid">
-        {/* <video id="manlift" autoPlay muted loop>
-            <source src="videos/manweightlift.mp4" type="video/mp4" />
-        </video> */}
-        <div className="heroText">
+    <section className="contact-hero">
+        <div className="contact-heroText">
             <h2> CONTACT US </h2>
             <p> Feel free to use the form below if you have any questions, comments, or concerns</p>
         </div>

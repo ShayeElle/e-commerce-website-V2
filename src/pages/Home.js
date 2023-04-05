@@ -1,41 +1,21 @@
 import React from 'react';
-import { useEffect } from "react";
-import { useState } from "react";
-import axios from "axios";
+// import { useEffect } from "react";
+// import { useState } from "react";
+// import axios from "axios";
 import '../styles/home.css';
 import '../styles/shared.css';
 import ImageSlider from "../components/ImageSlider";
+import { Link } from 'react-router-dom';
 
 
 function Home() {
-  const [Products, setProducts] = useState([]);
-
-  useEffect(() => {
-    const fetchAllProducts = async () => {
-      try {
-        const res = await axios.get("http://localhost:8800/products");
-        setProducts(res.data);
-      } catch (err) {
-        console.log(err);
-      }
-    };
-    fetchAllProducts();
-  }, []);
-
-  console.log(Products);
-
-  const filterData = []
-  filterData.push(Products[2])
-  filterData.push(Products[3])
-  filterData.push(Products[7])
-  console.log(filterData);
 
   const slides = [
-    { url: "http://localhost:3000/images/luffy.jpeg", title: "beach" },
-    { url: "http://localhost:3000/images/battleRopes.jpg", title: "boat" },
-    { url: "http://localhost:3000/images/naruto.jpeg", title: "forest" },
-    { url: "http://localhost:3000/images/TattedWoman.jpg", title: "city" },
-    { url: "http://localhost:3000/images/ichigo.jpeg", title: "italy" },
+    { url: "http://localhost:3000/images/luffy.jpeg", title: "luffy" },
+    { url: "http://localhost:3000/images/battle_ropes.jpg", title: "battle ropes" },
+    { url: "http://localhost:3000/images/naruto.jpeg", title: "naruto" },
+    { url: "http://localhost:3000/images/tatted_woman.jpg", title: "tatted woman" },
+    { url: "http://localhost:3000/images/ichigo.jpeg", title: "ichigo" },
   ];
   
   const containerStyles = {
@@ -51,17 +31,6 @@ function Home() {
             <video id="slider" autoPlay muted loop>
                 <source src="videos/myAnimeVid.MP4" type="video/mp4" />
             </video>
-            {/* <ul className="navigation">
-                <li onClick={() => videoUrl('videos/myAnimeVid.mp4')}>
-                <img src="images/thumb5.png" alt="Video Thumbnail" />
-                </li>
-                <li onClick={() => videoUrl('videos/Boxing.mp4')}>
-                <img src="images/thumb2.png" alt="Video Thumbnail" />
-                </li>
-                <li onClick={() => videoUrl('videos/Ladylift.mp4')}>
-                <img src="images/thumb3.png" alt="Video Thumbnail" />
-                </li>
-            </ul> */}
         </div>
   </section>
   <div className="mainQuote">
@@ -94,23 +63,23 @@ function Home() {
 
 <section className="grid-container">
   <div className="grid-item">
-    <a href="Shop.html">
-      <img src="images/squatRack.jpeg" alt="Squat Rack" />
-    </a>
+    <Link to="/products" >
+      <img src="images/power_rack.jpeg" alt="Squat Rack" />
+    </Link>
     <h3> Pro Power Rack</h3>
     <p> $1399.00</p>
   </div>
   <div className="grid-item">
-    <a href="Shop.html">
-      <img src="images/ironPlates.jpeg" alt="Squat Rack" />
-    </a>
+    <Link to="/products" >
+      <img src="images/cast_iron_plates.jpeg" alt="Squat Rack" />
+    </Link>
     <h3> Cast Iron Plates</h3>
     <p> $20.00 - $450.00</p>
   </div>
   <div className="grid-item">
-    <a href="Shop.html">
-      <img src="images/legpress.jpeg" alt="Squat Rack" />
-    </a>
+    <Link to="/products" >
+      <img src="images/leg_press.jpeg" alt="Squat Rack" />
+    </Link>
     <h3> Leg Press Hack Squat</h3>
     <p> $1890.00</p>
   </div>
@@ -134,7 +103,7 @@ function Home() {
 <section className="learn-container">
     <div className="info">
         <div class="info-image">
-            <img src="images/squat.jpeg" width= '90%' alt="Powerlifter About to Squat" />
+            <img src="images/pl_squat.jpeg" width= '90%' alt="Powerlifter About to Squat" />
         </div>
 
         <div className="learn-text">

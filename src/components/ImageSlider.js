@@ -5,6 +5,7 @@ const ImageSlider = ({slides}) => {
 
     const sliderStyles = {
         position: "relative",
+        margin: "90px",
         height: "100%",
     };
 
@@ -60,7 +61,7 @@ const ImageSlider = ({slides}) => {
         margin: "0 3px",
         cursor: "pointer",
         fontSize: "20px",
-        color: "white",
+        color: "white"
       };
 
       const goToSlide = (slideIndex) => {
