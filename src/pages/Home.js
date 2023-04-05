@@ -64,21 +64,21 @@ function Home() {
 <section className="grid-container">
   <div className="grid-item">
     <Link to="/products" >
-      <img src="images/power_rack.jpeg" alt="Squat Rack" />
+      <img src="./images/power_rack.jpeg" alt="Squat Rack" />
     </Link>
     <h3> Pro Power Rack</h3>
     <p> $1399.00</p>
   </div>
   <div className="grid-item">
     <Link to="/products" >
-      <img src="images/cast_iron_plates.jpeg" alt="Squat Rack" />
+      <img src="./images/cast_iron_plates.jpeg" alt="Squat Rack" />
     </Link>
     <h3> Cast Iron Plates</h3>
     <p> $20.00 - $450.00</p>
   </div>
   <div className="grid-item">
     <Link to="/products" >
-      <img src="images/leg_press.jpeg" alt="Squat Rack" />
+      <img src="./images/leg_press.jpeg" alt="Squat Rack" />
     </Link>
     <h3> Leg Press Hack Squat</h3>
     <p> $1890.00</p>
