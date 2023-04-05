@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/e-commerce-website-V2/static/css/main.c49852ce.css",
+    "main.js": "/e-commerce-website-V2/static/js/main.d616b5c1.js",
+    "static/media/closeup_dbCurl.jpg": "/e-commerce-website-V2/static/media/closeup_dbCurl.f1f1b7eb2674021aa95e.jpg",
+    "static/media/dark_lift.jpg": "/e-commerce-website-V2/static/media/dark_lift.e35f40111bfaaefaba3c.jpg",
+    "index.html": "/e-commerce-website-V2/index.html",
+    "main.c49852ce.css.map": "/e-commerce-website-V2/static/css/main.c49852ce.css.map",
+    "main.d616b5c1.js.map": "/e-commerce-website-V2/static/js/main.d616b5c1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c49852ce.css",
+    "static/js/main.d616b5c1.js"
+  ]
+}
