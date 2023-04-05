@@ -73,7 +73,9 @@ footer {
     transition: .5s;
     cursor: pointer;
   }
-
+  .copyright {
+  font-size: 10px;
+  }
   /*---- Responsive ----*/
 
 /*--- Small Mobile -----*/
