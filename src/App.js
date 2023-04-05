@@ -6,13 +6,10 @@ import Products from "./pages/Products";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import Cart from "./pages/Cart";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 
 export default function App() {
   return (
     <BrowserRouter>
-   
      <Routes>
         <Route path="/" element={<Layout />}>
 
@@ -23,7 +20,6 @@ export default function App() {
           <Route path="*" element={<NoPage />} />
         </Route>
      </Routes>
-   
     </BrowserRouter>
  );
 }
