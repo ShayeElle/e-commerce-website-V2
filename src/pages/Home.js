@@ -3,7 +3,7 @@ import React from 'react';
 // import { useState } from "react";
 // import axios from "axios";
 import '../styles/home.css';
-import '../styles/shared.css';
+// import '../styles/shared.css';
 import ImageSlider from "../components/ImageSlider";
 import { Link } from 'react-router-dom';
 
@@ -96,9 +96,9 @@ function Home() {
 
 
 {/* motivation quote */}
-<div className="motivation">
+<section className="motivation">
   <h2> WORK HARD, <br /> TRAIN HARDER</h2>
-</div>
+</section>
 
 <section className="learn-container">
     <div className="info">

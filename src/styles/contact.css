@@ -1,12 +1,12 @@
 
   .contact-heroText {
-    position: absolute;
+    position: relative;
     z-index: 100;
     color: #ffffff;
     font-size: 1rem;
     text-align: center;
     left: auto;
-    top: 1.9%;
+    /* top: -100px; */
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.8);
     border-style: solid;
@@ -177,10 +177,10 @@
   * {
     overflow-x: hidden;
   }
-  .contact-heroText{
-    margin-top: 175px;
+   .contact-heroText{
+    font-size: .8rem;
+    position: relative;
    }
-
   .contact{
     padding: 50px;
   }
@@ -197,9 +197,9 @@
 }
 
 @media screen and (min-width: 991px) and (max-width: 1380px){
-.contact-heroText{
-   margin-top: 175px;
-  }
+/* .contact-heroText{
+   margin-top: 10px;
+  } */
   .contact{
     padding: 80px;
   }

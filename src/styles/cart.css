@@ -1,0 +1,23 @@
+.cart-box{
+    display: block;
+    background-color: rgba(0, 0, 0, 0.231);
+    margin: 100px;
+    border-radius: 50px;
+    padding: 70px 0;
+}
+
+.coming-soon{
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    margin: 20px;
+    font-weight: 400;
+}
+
+.thank-you{
+    text-align: center;
+    font-size: 1rem;
+    color: white;
+    margin: 20px;
+    font-weight: 400;
+}

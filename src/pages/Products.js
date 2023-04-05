@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import ArrayCard from "../components/ArrayCard";
 import FilterCard from "../components/FilterCard";
-import RuthCard from "../components/FilterCard";
-import productArray from "../data/productsArray.json";
+// import productArray from "../data/productsArray.json";
+import '../styles/products.css';
 function Products(props) {
   
   return (
@@ -18,8 +18,8 @@ function Products(props) {
         </div>
       </section>
 
-      {/* <ArrayCard products={filteredProducts} /> */}
-      <FilterCard />
+      <ArrayCard />
+      {/* <FilterCard /> */}
     </>
   );
 }

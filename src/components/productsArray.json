@@ -11,7 +11,7 @@
     "id": 2,
     "title": "LB Color Bumper Plates",
     "description": "Options: Include Complete Set or Pairs",
-    "price": "57.00 - 450.00",
+    "price": "450.00",
     "image": "../images/bumper_plates.jpeg",
     "category": "Weights"
     },
@@ -19,7 +19,7 @@
     "id": 3,
     "title": "Cast Iron Plates",
     "description": "Options: Include Complete Set or Pairs",
-    "price": "20.00 - 450.00",
+    "price": "450.00",
     "image": "../images/cast_iron_plates.jpeg",
     "category": "Weights"
     },
@@ -43,7 +43,7 @@
     "id": 6,
     "title": "Rubber Hex Dumbbells",
     "description": "Options: Purchase Full Set 5 - 25 LB or Pairs",
-    "price": "40.00 - 1,099.00",
+    "price": "1099.00",
     "image": "../images/dumbbells.jpeg",
     "category": "Weights"
     },

@@ -1,28 +1,42 @@
-import React from "react";
-import productArray from "../data/productsArray.json";
-import "../styles/array-card.css";
-import Button from "./Button";
+import React, { useRef, useState, useEffect } from "react";
+import productsArray from "../components/productsArray.json";
+import Search from "./Search";
+import "../styles/products.css"
 
 const ArrayCard = () => {
-    console.log(productArray);
+
+  const [search, setSearch] = useState("");
+  const [products, setProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
+
+  const inputRef = useRef(null);
+
+  const handleChange = (e) => setSearch(e.target.value);
+
+  useEffect(() => {
+      setProducts(productsArray);
+  }, []);
+
+  const [minPrice, setMinPrice] = useState(0);
+  const [maxPrice, setMaxPrice] = useState(3000);
+
+  console.log(productsArray);
+
+  useEffect(() => {
+    const filtered = products.filter((product) => {
+        const titleMatch = product.title.toLowerCase().includes(search.toLowerCase());
+        const priceMatch = product.price >= minPrice && product.price <= maxPrice;
+        return titleMatch && priceMatch;
+    });
+    setFilteredProducts(filtered);
+}, [products, search, minPrice, maxPrice]);
+
 
     return (
-            <div>
-              <div className="products-container">
-                {productArray.map((product) => (
-                  <div key={product.id} className="product-item">
-                    <img src={product.image} alt={product.title} />
-                    <div className="product-details">
-                      <h2>{product.title}</h2>
-                      <p>{product.description}</p>
-                      <span className="product-price">${product.price}</span>
-                    </div>
-                    <Button />
-                  </div>
-                ))}
-              </div>
-            </div>
-          );
-}
+      <div className="wrapper__filter">
+        <Search />
+      </div>
+    )
+};
 
 export default ArrayCard;

@@ -1,8 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
-// import { RuthFilter } from "./RuthFilter";
-
+import { useEffect, useState } from "react";
 import axios from "axios";
 import Search from "./Search";
 import '../styles/filter.css'

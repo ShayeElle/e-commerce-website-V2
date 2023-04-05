@@ -1,8 +1,4 @@
-/* 
-.wrapper__filter {
-  position: relative;
-  text-align: center;
-} */
+
   .products-header {
     position: relative;
     width: 100%;
@@ -84,6 +80,8 @@
     border-radius: 10px;
     object-fit: cover; /* to make sure the images maintain their aspect ratio */
   }
+  
+  /* Responsivenss */
   
   /* Make grid contain less columns and more rows everytime screen is made smaller*/
   @media screen and (max-width: 1024px) {
