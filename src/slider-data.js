@@ -5,7 +5,7 @@ export const sliderData = [
       desc: "“I'm strongest! I'm the one who is going to become the Pirate King!”",
     },
     {
-      image: "https://pbs.twimg.com/media/FMDdKrFXsAEoiHi.jpg:large",
+      image: "https://pbs.twimg.com/media/FMDdKrFXsAEoiHi.jpg",
       heading: "NARUTO UZUMAKI",
       desc: "“HARD WORK IS WORTHLESS FOR THOSE THAT DON’T BELIEVE IN THEMSELVES.”",
     },
