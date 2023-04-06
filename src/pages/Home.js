@@ -12,7 +12,7 @@ function Home() {
 
   const slides = [
     { url: "/static/images/luffy.jpeg", title: "luffy" },
-    { url: "/static/images/images/battle_ropes.jpg", title: "battle ropes" },
+    { url: "/static/images/battle_ropes.jpg", title: "battle ropes" },
     { url: "/static/images/naruto.jpeg", title: "naruto" },
     { url: "/static/images/tatted_woman.jpg", title: "tatted woman" },
     { url: "/static/images/ichigo.jpeg", title: "ichigo" },
