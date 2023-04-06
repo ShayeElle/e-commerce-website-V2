@@ -5,7 +5,7 @@ import axios from "axios";
 import "../styles/filter.css"
 import Button from "./Button";
 
-const Search = () => {
+const Filter = () => {
     const [search, setSearch] = useState("");
     const [products, setProducts] = useState([]);
     const [filteredProducts, setFilteredProducts] = useState("");
@@ -46,7 +46,6 @@ const Search = () => {
 
     return (
         <div>
-
             <div className="searchBar">
                 <label>Search:</label>
                 <input className="filter-label"
@@ -91,4 +90,4 @@ const Search = () => {
     );
 };
 
-export default Search;
+export default Filter;

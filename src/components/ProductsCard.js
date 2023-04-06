@@ -1,10 +1,10 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import Search from "./Search";
 import '../styles/filter.css'
+import Filter from "./Filter";
 
-const FilterCard = () => {
+const ProductsCard = () => {
     const [products, setProducts] = useState([]);
     const [filteredProducts, setFilteredProducts] = useState([]);
 
@@ -27,10 +27,10 @@ const FilterCard = () => {
 
     return (
         <div className="wrapper__filter">
-            <Search />
+            <Filter />
 
         </div>
     );
 };
 
-export default FilterCard;
+export default ProductsCard;

@@ -3,6 +3,10 @@
     text-align: center;
 }
 
+label{
+    color: white;
+}
+
 .filter-label {
     color: rgb(0, 0, 0);
     font-size: 15px;
