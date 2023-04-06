@@ -24,3 +24,18 @@ label{
 .searchBar input {
     width: 50%;
 }
+
+@media screen and (max-width: 620px) {
+    .maxnmin{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (min-width: 620px) {
+    .products-container > div {
+      flex-basis: 19rem;
+      margin: 30px;
+    }
+  }

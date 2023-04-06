@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import ArrayCard from "../components/ArrayCard";
 import ProductsCard from "../components/ProductsCard";
-// import productArray from "../data/productsArray.json";
 import '../styles/products.css';
-// import '../styles/filter.css';
+
+
+
+
 function Products(props) {
   
   return (

@@ -1,8 +1,7 @@
 import React from 'react';
-// import productArray from "../components/productsArray.json";
 import "../styles/cart.css"
 
-const Cart = ({ items, onRemoveItem }) => {
+const Cart = () => {
   return (
     <>
     <section className='cart-box'>

@@ -1,7 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 import axios from "axios";
-// import "../styles/products.css";
-// import ShoppingCart from "./ShoppingCart";
 import "../styles/filter.css"
 import Button from "./Button";
 
@@ -9,7 +7,6 @@ const Filter = () => {
     const [search, setSearch] = useState("");
     const [products, setProducts] = useState([]);
     const [filteredProducts, setFilteredProducts] = useState("");
-    // const [cartItems, setCartItems] = useState([]);
 
     const inputRef = useRef(null);
 
