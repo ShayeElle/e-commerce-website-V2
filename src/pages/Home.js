@@ -64,21 +64,21 @@ function Home() {
 <section className="grid-container">
   <div className="grid-item">
     <Link to="/products" >
-      <img src="http://localhost:3000/images/power_rack.jpeg" alt="Squat Rack" />
+      <img src="https://www.titan.fitness/dw/image/v2/BDBZ_PRD/on/demandware.static/-/Sites-masterCatalog_Titan/default/dwa07834a4/images/hi-res/Fitness/401248_01.jpg?sw=800&sh=800" alt="Squat Rack" />
     </Link>
     <h3> Pro Power Rack</h3>
     <p> $1399.00</p>
   </div>
   <div className="grid-item">
     <Link to="/products" >
-      <img src="http://localhost:3000/images/cast_iron_plates.jpeg" alt="Squat Rack" />
+      <img src="https://www.titan.fitness/dw/image/v2/BDBZ_PRD/on/demandware.static/-/Sites-masterCatalog_Titan/default/dwfa7e0f20/images/hi-res/Fitness/CPLATE_AF_01.jpg?sw=800&sh=800" alt="Squat Rack" />
     </Link>
     <h3> Cast Iron Plates</h3>
     <p> $20.00 - $450.00</p>
   </div>
   <div className="grid-item">
     <Link to="/products" >
-      <img src="http://localhost:3000/images/leg_press.jpeg" alt="Squat Rack" />
+      <img src="https://www.titan.fitness/dw/image/v2/BDBZ_PRD/on/demandware.static/-/Sites-masterCatalog_Titan/default/dw47f28680/images/hi-res/Fitness/401486_01.jpg?sw=800&sh=800" alt="Squat Rack" />
     </Link>
     <h3> Leg Press Hack Squat</h3>
     <p> $1890.00</p>
