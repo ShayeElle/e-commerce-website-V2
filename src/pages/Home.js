@@ -29,7 +29,7 @@ function Home() {
     <section className='video-container'>
         <div className="video">
             <video id="slider" autoPlay muted loop>
-                <source src="http://localhost:3000/videos/videos/myAnimeVid.MP4" type="video/mp4" />
+                <source src="http://localhost:3000/videos/myAnimeVid.MP4" type="video/mp4" />
             </video>
         </div>
   </section>
@@ -78,7 +78,7 @@ function Home() {
   </div>
   <div className="grid-item">
     <Link to="/products" >
-      <img src="http://localhost:3000/images/images/leg_press.jpeg" alt="Squat Rack" />
+      <img src="http://localhost:3000/images/leg_press.jpeg" alt="Squat Rack" />
     </Link>
     <h3> Leg Press Hack Squat</h3>
     <p> $1890.00</p>
