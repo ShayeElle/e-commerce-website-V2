@@ -103,7 +103,7 @@ function Home() {
 <section className="learn-container">
     <div className="info">
         <div class="info-image">
-            <img src="http://localhost:3000/images/pl_squat.jpeg" width= '90%' alt="Powerlifter About to Squat" />
+            <img src="/static/images/pl_squat.jpeg" width= '90%' alt="Powerlifter About to Squat" />
         </div>
 
         <div className="learn-text">

@@ -14,7 +14,7 @@ function Navbar() {
     <header className='store-name'> 
         <h1> SHONEN LIFT </h1> 
         <Link to="/" >
-          <img className='shop_logo' src="http://localhost:3000/images/shonenLift_logo.PNG" alt="logo" />
+          <img className='shop_logo' src="/static/images/shonenLift_Logo.png" alt="logo" />
         </Link>
     </header>
     <nav className='nav-links' id='myTopnav'>
