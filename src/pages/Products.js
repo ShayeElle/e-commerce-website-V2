@@ -11,7 +11,7 @@ function Products(props) {
       <section className="products-header">
         <img
           id="manlift"
-          src="/images/bumper_platesHD.jpg"
+          src="/static/images/bumper_platesHD.jpg"
           alt="Colorful Bumper Plates"
         />
         <div className="product-header-text">
