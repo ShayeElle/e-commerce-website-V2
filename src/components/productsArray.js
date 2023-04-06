@@ -1,4 +1,4 @@
-[
+const productsArray = [
     {
     "id": 1,
     "title": "Olympic Barbell",
@@ -95,4 +95,6 @@
     "image": "../images/punching_bag.png",
     "category": "Accessories"
     }
-    ]
+    ];
+
+    export default productsArray;

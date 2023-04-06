@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import productsArray from "../components/productsArray.json";
+import productsArray from "./productsArray";
 import Search from "./Search";
 import "../styles/products.css"
 
