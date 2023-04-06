@@ -1,4 +1,5 @@
-const productsArray = [
+const ProductsArray = [
+    
     {
     "id": 1,
     "title": "Olympic Barbell",
@@ -97,4 +98,4 @@ const productsArray = [
     }
     ];
 
-    export default productsArray;
+    export default ProductsArray;
