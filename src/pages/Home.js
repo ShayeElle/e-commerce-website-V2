@@ -64,7 +64,7 @@ function Home() {
 <section className="grid-container">
   <div className="grid-item">
     <Link to="/products" >
-      <img src="./images/power_rack.jpeg" alt="Squat Rack" />
+      <img src="http://localhost:3000/images/power_rack.jpeg" alt="Squat Rack" />
     </Link>
     <h3> Pro Power Rack</h3>
     <p> $1399.00</p>
