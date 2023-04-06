@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import productsArray from "./productsArray";
+import ProductsArray from "./ProductsArray";
 import Search from "./Search";
 import "../styles/products.css"
 
@@ -14,7 +14,7 @@ const ArrayCard = () => {
   // const handleChange = (e) => setSearch(e.target.value);
 
   useEffect(() => {
-      setProducts(productsArray);
+      setProducts(ProductsArray);
   }, []);
 
 //   const [minPrice, setMinPrice] = useState(0);
