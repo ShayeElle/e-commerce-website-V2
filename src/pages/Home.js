@@ -29,7 +29,7 @@ function Home() {
     <section className='video-container'>
         <div className="video">
             <video id="slider" autoPlay muted loop>
-                <source src="videos/myAnimeVid.MP4" type="video/mp4" />
+                <source src="http://localhost:3000/videos/videos/myAnimeVid.MP4" type="video/mp4" />
             </video>
         </div>
   </section>
@@ -71,14 +71,14 @@ function Home() {
   </div>
   <div className="grid-item">
     <Link to="/products" >
-      <img src="./images/cast_iron_plates.jpeg" alt="Squat Rack" />
+      <img src="http://localhost:3000/images/cast_iron_plates.jpeg" alt="Squat Rack" />
     </Link>
     <h3> Cast Iron Plates</h3>
     <p> $20.00 - $450.00</p>
   </div>
   <div className="grid-item">
     <Link to="/products" >
-      <img src="./images/leg_press.jpeg" alt="Squat Rack" />
+      <img src="http://localhost:3000/images/images/leg_press.jpeg" alt="Squat Rack" />
     </Link>
     <h3> Leg Press Hack Squat</h3>
     <p> $1890.00</p>
@@ -103,7 +103,7 @@ function Home() {
 <section className="learn-container">
     <div className="info">
         <div class="info-image">
-            <img src="images/pl_squat.jpeg" width= '90%' alt="Powerlifter About to Squat" />
+            <img src="http://localhost:3000/images/pl_squat.jpeg" width= '90%' alt="Powerlifter About to Squat" />
         </div>
 
         <div className="learn-text">
