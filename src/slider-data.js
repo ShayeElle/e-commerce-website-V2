@@ -7,7 +7,7 @@ export const sliderData = [
     {
       image: "https://pbs.twimg.com/media/FMDdKrFXsAEoiHi.jpg",
       heading: "NARUTO UZUMAKI",
-      desc: "“HARD WORK IS WORTHLESS FOR THOSE THAT DON’T BELIEVE IN THEMSELVES.”",
+      desc: "“Hard work is worthless for those that don’t believe in themselves.”",
     },
     {
       image: "https://www.wallpapers-for-phone.com/phone/ichigo-eyes-kurosaki.jpg",
