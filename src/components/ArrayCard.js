@@ -54,7 +54,7 @@ const ArrayCard = () => {
           <input className="filter-price"
               type="number"
               value={maxPrice}
-              onChange={(e) => setMaxPrice(Math.min(500, e.target.value))}
+              onChange={(e) => setMaxPrice(Math.min(3000, e.target.value))}
           />
         </div>
         <div className="products-container">
