@@ -11,11 +11,11 @@ import { Link } from 'react-router-dom';
 function Home() {
 
   const slides = [
-    { url: "http://localhost:3000/images/luffy.jpeg", title: "luffy" },
-    { url: "http://localhost:3000/images/battle_ropes.jpg", title: "battle ropes" },
-    { url: "http://localhost:3000/images/naruto.jpeg", title: "naruto" },
-    { url: "http://localhost:3000/images/tatted_woman.jpg", title: "tatted woman" },
-    { url: "http://localhost:3000/images/ichigo.jpeg", title: "ichigo" },
+    { url: "/static/images/luffy.jpeg", title: "luffy" },
+    { url: "/static/images/images/battle_ropes.jpg", title: "battle ropes" },
+    { url: "/static/images/naruto.jpeg", title: "naruto" },
+    { url: "/static/images/tatted_woman.jpg", title: "tatted woman" },
+    { url: "/static/images/ichigo.jpeg", title: "ichigo" },
   ];
   
   const containerStyles = {
@@ -29,7 +29,7 @@ function Home() {
     <section className='video-container'>
         <div className="video">
             <video id="slider" autoPlay muted loop>
-                <source src="http://localhost:3000/videos/myAnimeVid.MP4" type="video/mp4" />
+                <source src="/static/videos/myAnimeVid.MP4" type="video/mp4" />
             </video>
         </div>
   </section>
