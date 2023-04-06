@@ -7,7 +7,7 @@ function NoPage() {
         <>
         <section className='fof-container'>
             <h1>404</h1>
-            <img src="images/sad_chopper.jpg" alt='Sad Chopper' />
+            <img src="/static/sad_chopper.jpg" alt='Sad Chopper' />
             <p> Sorry! Page not found, try not to get lost! </p>
         </section>
         
